@@ -9,6 +9,7 @@ import About2 from "../components/About/About2";
 import About3 from "../components/About/About3";
 import About4 from "../components/About/About4";
 import About5 from "../components/About/About5";
+import About6 from "../components/About/About6";
 
 import CTA1 from "../components/call-to-action/CTA1";
 import CTA2 from "../components/call-to-action/CTA2";
@@ -25,6 +26,7 @@ import Footer1 from "../components/Footer/Footer1";
 import Footer2 from "../components/Footer/Footer2";
 import Footer3 from "../components/Footer/Footer3";
 import Footer4 from "../components/Footer/Footer4";
+import Footer5 from "../components/Footer/Footer5";
 
 import Form1 from "../components/Form/Form1";
 import Form2 from "../components/Form/Form2";
@@ -91,6 +93,7 @@ import Hero30 from '../components/hero/Hero30'
 import Hero31 from '../components/hero/Hero31'
 import Hero32 from '../components/hero/Hero32'
 import Hero33 from '../components/hero/Hero33'
+import Hero34 from '../components/hero/Hero34'
 
 
 import Login1 from '../components/Login/Login1'
@@ -133,13 +136,23 @@ import Testimonial5 from '../components/Testimonial/Testimonial5'
 import Testimonial6 from '../components/Testimonial/Testimonial6'
 import Testimonial7 from '../components/Testimonial/Testimonial7'
 import Testimonial8 from '../components/Testimonial/Testimonial8'
-
-import All_Website from "../components/Websites/All_Website";
-import Website1 from '../components/Websites/Website1/Website1_home'
-import Website2 from '../components/Websites/Website2/App'
+import Testimonial9 from '../components/Testimonial/Testimonial9'
 
 
 
+import Product1 from "../components/Products/Product1";
+import Product2 from "../components/Products/Product2";
+import Footer6 from "../components/Footer/Footer6";
+import Hero35 from "../components/hero/Hero35";
+import Service7 from "../components/Services/Service7";
+import Service8 from "../components/Services/Service8";
+import Hero37 from "../components/hero/Hero37";
+import Company3 from "../components/Company/Company3";
+
+
+
+// import All_Website from "../components/Websites/All_Website";
+// import Website2 from '../components/Websites/Website3/App'
 
 
 
@@ -149,7 +162,7 @@ import Website2 from '../components/Websites/Website2/App'
 const data = {
     Navbar: {
         id: 1,
-        titre: "Navbar",
+        titre: "Navbar ✅",
         path: "/?tab=Navbar",
         components: [
             { id: 1, title_composant: 'Navbar1', component: Navbar1 },
@@ -161,20 +174,21 @@ const data = {
 
     About: {
         id: 1,
-        titre: "About",
+        titre: "About ✅",
         path: "/?tab=About",
         components: [
             { id: 1, title_composant: 'About1', component: About1 },
             { id: 2, title_composant: 'About2', component: About2 },
             { id: 3, title_composant: 'About3', component: About3 },
             { id: 4, title_composant: 'About4', component: About4 },
-            // { id: 5, title_composant: 'About5', component: About5 },
+            { id: 5, title_composant: 'About5', component: About5 },
+            { id: 6, title_composant: 'About6', component: About6 },
         ],
     },
 
     CTA: {
         id: 1,
-        titre: "CTA",
+        titre: "CTA ✅",
         path: "/?tab=CTA",
         components: [
             { id: 1, title_composant: 'CTA1', component: CTA1 },
@@ -190,21 +204,10 @@ const data = {
         ],
     },
 
-    Footer: {
-        id: 1,
-        titre: "Footer",
-        path: "/?tab=Footer",
-        components: [
-            { id: 1, title_composant: 'Footer1', component: Footer1 },
-            { id: 2, title_composant: 'Footer2', component: Footer2 },
-            { id: 3, title_composant: 'Footer3', component: Footer3 },
-            { id: 4, title_composant: 'Footer4', component: Footer4 },
-        ],
-    },
 
     Form: {
         id: 1,
-        titre: "Form",
+        titre: "Form 🚫",
         path: "/?tab=Form",
         components: [
             { id: 1, title_composant: 'Form1', component: Form1 },
@@ -214,7 +217,7 @@ const data = {
 
     Gallery: {
         id: 1,
-        titre: "Gallery",
+        titre: "Gallery 🚫",
         path: "/?tab=Gallery",
         components: [
             { id: 1, title_composant: 'Gallery1', component: Gallery1 },
@@ -226,7 +229,7 @@ const data = {
 
     Blogs: {
         id: 1,
-        titre: "Blogs",
+        titre: "Blogs ✅",
         path: "/?tab=Blogs",
         components: [
             { id: 1, title_composant: 'Blogs1', component: Blogs1 },
@@ -242,17 +245,18 @@ const data = {
 
     Company: {
         id: 1,
-        titre: "Company",
+        titre: "Company ✅",
         path: "/?tab=Company",
         components: [
             { id: 1, title_composant: 'Company1', component: Company1 },
-            { id: 2, title_composant: 'Company2', component: Company2 },
+            // { id: 2, title_composant: 'Company2', component: Company2 },
+            { id: 3, title_composant: 'Company3', component: Company3 },
         ],
     },
 
     Contact: {
         id: 1,
-        titre: "Contact",
+        titre: "Contact ✅",
         path: "/?tab=Contact",
         components: [
             { id: 1, title_composant: 'Contact1', component: Contact1 },
@@ -268,20 +272,22 @@ const data = {
 
     Footer: {
         id: 1,
-        titre: "Footer",
+        titre: "Footer ✅",
         path: "/?tab=Footer",
         components: [
             { id: 1, title_composant: 'Footer1', component: Footer1 },
             { id: 2, title_composant: 'Footer2', component: Footer2 },
             { id: 3, title_composant: 'Footer3', component: Footer3 },
             { id: 4, title_composant: 'Footer4', component: Footer4 },
+            { id: 5, title_composant: 'Footer5', component: Footer5 },
+            { id: 6, title_composant: 'Footer6', component: Footer6 },
         ],
     },
 
 
     Hero: {
         id: 1,
-        titre: "Hero",
+        titre: "Hero ✅",
         path: "/?tab=Hero",
         components: [
             { id: 1, title_composant: 'Hero1', component: Hero1 },
@@ -311,12 +317,15 @@ const data = {
             { id: 25, title_composant: 'Hero25', component: Hero25 },
             { id: 26, title_composant: 'Hero26', component: Hero26 },
             { id: 27, title_composant: 'Hero27', component: Hero27 },
-            // { id: 28, title_composant: 'Hero28', component: Hero28 },
+            // { id: 28, title_composant: 'Hero28', component: Hero28 }, /////////////////////////
             { id: 29, title_composant: 'Hero29', component: Hero29 },
             { id: 30, title_composant: 'Hero30', component: Hero30 },
             { id: 31, title_composant: 'Hero31', component: Hero31 },
             { id: 32, title_composant: 'Hero32', component: Hero32 },
             { id: 33, title_composant: 'Hero33', component: Hero33 },
+            { id: 34, title_composant: 'Hero34', component: Hero34 },
+            { id: 35, title_composant: 'Hero35', component: Hero35 },
+            { id: 37, title_composant: 'Hero37', component: Hero37 },
 
 
         ],
@@ -326,7 +335,7 @@ const data = {
 
     Login: {
         id: 1,
-        titre: "Login",
+        titre: "Login 🚫",
         path: "/?tab=Login",
         components: [
             { id: 1, title_composant: 'Login1', component: Login1 },
@@ -336,7 +345,7 @@ const data = {
 
     Page404: {
         id: 1,
-        titre: "Page404",
+        titre: "Page404 ✅",
         path: "/?tab=Page404",
         components: [
             { id: 1, title_composant: 'Page4041', component: Page404 },
@@ -349,7 +358,7 @@ const data = {
 
     Pricing: {
         id: 1,
-        titre: "Pricing",
+        titre: "Pricing ✅",
         path: "/?tab=Pricing",
         components: [
             { id: 1, title_composant: 'Pricing1', component: Pricing1 },
@@ -365,7 +374,7 @@ const data = {
 
     Service: {
         id: 1,
-        titre: "Service",
+        titre: "Service ✅",
         path: "/?tab=Service",
         components: [
             { id: 1, title_composant: 'Service1', component: Service1 },
@@ -374,6 +383,9 @@ const data = {
             { id: 4, title_composant: 'Service4', component: Service4 },
             { id: 5, title_composant: 'Service5', component: Service5 },
             { id: 6, title_composant: 'Service6', component: Service6 },
+            { id: 7, title_composant: 'Service7', component: Service7 },
+            { id: 8, title_composant: 'Service8', component: Service8
+         },
         ],
     },
 
@@ -382,7 +394,7 @@ const data = {
 
     Statistic: {
         id: 1,
-        titre: "Statistic",
+        titre: "Statistic 🚫",
         path: "/?tab=Statistic",
         components: [
             { id: 1, title_composant: 'Statistic1', component: Statistic1 },
@@ -405,17 +417,60 @@ const data = {
             { id: 4, title_composant: 'Testimonial4', component: Testimonial4 },
             { id: 5, title_composant: 'Testimonial5', component: Testimonial5 },
             { id: 6, title_composant: 'Testimonial6', component: Testimonial6 },
-            // { id: 7, title_composant: 'Testimonial8', component: Testimonial8 },
+            { id: 7, title_composant: 'Testimonial7', component: Testimonial7 },
+            { id: 8, title_composant: 'Testimonial8', component: Testimonial8 },
+            { id: 9, title_composant: 'Testimonial9', component: Testimonial9 },
         ],
     },
 
     Team: {
         id: 1,
-        titre: "Team",
+        titre: "Team 🚫",
         path: "/?tab=Team",
         components: [
             { id: 1, title_composant: 'Team1', component: Team1 },
             { id: 2, title_composant: 'Team2', component: Team2 },
+        ],
+    },
+
+
+    Product: {
+        id: 1,
+        titre: "Product 🚫",
+        path: "/?tab=Product",
+        components: [
+            { id: 1, title_composant: 'Product1', component: Product1 },
+            { id: 2, title_composant: 'Product2', component: Product2 },
+        ],
+    },
+
+
+
+    FAQ: {
+        id: 1,
+        titre: "FAQ 🚫",
+        path: "/?tab=FAQ",
+        components: [
+            // --------------------------------------------------------------
+        ],
+    },
+
+
+    Process: {
+        id: 1,
+        titre: "Process 🚫",
+        path: "/?tab=Process",
+        components: [
+            // --------------------------------------------------------------
+        ],
+    },
+
+    Slider: {
+        id: 1,
+        titre: "Slider 🚫",
+        path: "/?tab=Slider",
+        components: [
+            // --------------------------------------------------------------
         ],
     },
 
@@ -426,7 +481,7 @@ const data = {
         titre: "Websites",
         path: "/?tab=Websites",
         components: [
-            { id: 2, title_composant: 'Team2', component: Website2 },
+            // { id: 2, title_composant: 'Team2', component: Website2 },
 
         ],
     },

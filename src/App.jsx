@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // import Home from './components/Home'
 import Welcom_Page from './Welcom_Page'
 
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+
 
 function App() {
   const [count, setCount] = useState(0)

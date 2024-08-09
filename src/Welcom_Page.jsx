@@ -92,22 +92,25 @@ const Sidebar_app = ({ toggleSidebar, isOpen }) => {
                 <div className="flex flex-col flex-1 ">
                     <nav className="flex-1 px-2 py-4 bg-gray-800">
 
-                        {Object.values(data).map(section => (
-                            <div key={section.id}>
-                                <Link
-                                    key={section.id}
-                                    onClick={handleClick(section.titre)}
-                                    to={section.path}
-                                    className={`${isActive === section.titre ? 'bg-gray-700' : ''} relative flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700`}
-                                >
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                    </svg>
-                                    {section.titre}
-                                    <div className='absolute right-5 bg-slate-900 w-8 rounded-lg text-center'>{section.components.length}</div>
-                                </Link>
-                            </div>
-                        ))}
+                        {Object.values(data)
+                            .sort((a, b) => a.titre.localeCompare(b.titre))  // Sort alphabetically by `titre`
+                            .map(section => (
+                                <div key={section.id}>
+                                    <Link
+                                        onClick={handleClick(section.titre)}
+                                        to={section.path}
+                                        className={`${isActive === section.titre ? 'bg-gray-700' : ''} relative flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700`}
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                        {section.titre}
+                                        <div className='absolute right-5 bg-slate-900 w-8 rounded-lg text-center'>{section.components.length}</div>
+                                    </Link>
+                                </div>
+                            ))
+                        }
+
                     </nav>
                 </div>
             </div>

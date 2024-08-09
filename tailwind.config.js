@@ -14,6 +14,11 @@ export default {
       screens: {
         'xs': '480px',
       },
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+        cursive: ["Pacifico", "Sriracha", "cursive"],
+        cursive2: ["Sriracha", "cursive"],
+      }
     },
   },
   plugins: [
@@ -21,3 +26,4 @@ export default {
     // require('tailwind-scrollbar'),
   ],
 }
+
