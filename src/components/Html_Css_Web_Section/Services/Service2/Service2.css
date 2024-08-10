@@ -1,0 +1,161 @@
+/* @font-face {
+    font-family: Lato_light;
+    src: url(./GoogleFonts/Lato/Lato-Light.ttf);
+}
+@font-face {
+    font-family: Lato_regular;
+    src: url(./GoogleFonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Lato_bold;
+    src: url(./GoogleFonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: Jost_light;
+    src: url(./GoogleFonts/Jost/static/Jost-Light.ttf);
+}
+@font-face {
+    font-family: Jost_regular;
+    src: url(./GoogleFonts/Jost/static/Jost-Regular.ttf);
+}
+@font-face {
+    font-family: Jost_bold;
+    src: url(./GoogleFonts/Jost/static/Jost-Bold.ttf);
+} */
+
+
+
+
+#Service_2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 6rem 0;
+    background-color: var(--main-gray);
+}
+
+
+#Service_2 .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Service_2 .title_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+#Service_2 .title_section h3 {
+    font-size: 2.5rem;
+    font-family: Lato_bold;
+    margin: 0;
+    color: var(--main-color);
+}
+
+#Service_2 .title_section p {
+    font-size: 1.1rem;
+    font-family: Lato_regular;
+    color: rgb(73, 73, 73);
+    line-height: 1.7rem;
+    width: 80%;
+    margin: .5rem 0;
+}
+
+#Service_2 .Containt {
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+#Service_2 .Containt .service1{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.202);
+    background-color: white;
+}
+
+
+#Service_2 .service1 h3 {
+    font-size: 1.3rem;
+    font-family: Lato_bold;
+}
+
+#Service_2 .service1 .service_icon {
+    width: 100%;
+    height: 13rem;
+    border-radius: 1rem;
+    border: 1px solid var(--main-color);
+}
+
+#Service_2 .service1 h3 {
+    margin: 1rem 0;
+    color: var(--main-color);
+}
+
+#Service_2 .service1 p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.6rem;
+    color: rgb(110, 110, 110);
+    font-family: Lato_regular;
+}
+
+#Service_2 .service1 button {
+    padding: .5rem 2rem;
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    color: white;
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: .5rem;
+    margin: 1rem 0 1rem  0;
+    font-size: .9rem;
+}
+
+
+
+@media (max-width: 501px) {
+    
+#Service_2 .title_section {
+    width: 95%;
+}
+
+#Service_2 .title_section h3 {
+    font-size: 1.82rem;
+    width: 70%;
+}
+
+#Service_2 .title_section p {
+    width: 95%;
+}
+
+
+#Service_2 .Containt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Service_2 .Containt .service1{
+    width: 90%;
+}
+}

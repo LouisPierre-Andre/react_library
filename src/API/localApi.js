@@ -148,6 +148,36 @@ import Service7 from "../components/Services/Service7";
 import Service8 from "../components/Services/Service8";
 import Hero37 from "../components/hero/Hero37";
 import Company3 from "../components/Company/Company3";
+import About8 from "../components/About/About7";
+import About7 from "../components/About/About7";
+import Service9 from "../components/Services/Service9";
+import Contact7 from "../components/Contact/Contact7";
+import Contact8 from "../components/Contact/Contact8";
+import Contact9 from "../components/Contact/Contact9";
+import Contact10 from "../components/Contact/Contact10";
+import Contact11 from "../components/Contact/Contact11";
+import CTA11 from "../components/call-to-action/CTA11";
+import Experience1 from "../components/Experience/Experience1";
+import Experience2 from "../components/Experience/Experience2";
+import Footer7 from "../components/Footer/Footer7";
+import Footer8 from "../components/Footer/Footer8";
+import Gallery5 from "../components/Gallery/Gallery5";
+import Gallery6 from "../components/Gallery/Gallery6";
+import Gallery7 from "../components/Gallery/Gallery7";
+import Gallery8 from "../components/Gallery/Gallery8";
+import Service10 from "../components/Services/Service10";
+import Service11 from "../components/Services/Service11";
+import Service12 from "../components/Services/Service12";
+import Service13 from "../components/Services/Service13";
+import Skills1 from "../components/Skills/Skills1";
+import Skills2 from "../components/Skills/Skills2";
+import Skills3 from "../components/Skills/Skills3";
+import Skills4 from "../components/Skills/Skills4";
+import Team3 from "../components/Team/Team3";
+import Team4 from "../components/Team/Team4";
+import Team5 from "../components/Team/Team5";
+import Team6 from "../components/Team/Team6";
+import About9 from "../components/About/About9";
 
 
 
@@ -183,6 +213,9 @@ const data = {
             { id: 4, title_composant: 'About4', component: About4 },
             { id: 5, title_composant: 'About5', component: About5 },
             { id: 6, title_composant: 'About6', component: About6 },
+            { id: 7, title_composant: 'About7', component: About7 },
+            { id: 8, title_composant: 'About8', component: About8 },
+            { id: 9, title_composant: 'About9', component: About9 },
         ],
     },
 
@@ -201,6 +234,7 @@ const data = {
             { id: 8, title_composant: 'CTA8', component: CTA8 },
             { id: 9, title_composant: 'CTA9', component: CTA9 },
             { id: 10, title_composant: 'CTA10', component: CTA10 },
+            // { id: 11, title_composant: 'CTA11', component: CTA11 },
         ],
     },
 
@@ -224,6 +258,10 @@ const data = {
             { id: 2, title_composant: 'Gallery2', component: Gallery2 },
             { id: 3, title_composant: 'Gallery3', component: Gallery3 },
             { id: 4, title_composant: 'Gallery4', component: Gallery4 },
+            { id: 5, title_composant: 'Gallery5', component: Gallery5 },
+            { id: 6, title_composant: 'Gallery6', component: Gallery6 },
+            { id: 7, title_composant: 'Gallery7', component: Gallery7 },
+            { id: 8, title_composant: 'Gallery8', component: Gallery8 },
         ],
     },
 
@@ -265,6 +303,11 @@ const data = {
             { id: 4, title_composant: 'Contact4', component: Contact4 },
             { id: 5, title_composant: 'Contact5', component: Contact5 },
             { id: 6, title_composant: 'Contact6', component: Contact6 },
+            { id: 7, title_composant: 'Contact7', component: Contact7 },
+            { id: 8, title_composant: 'Contact8', component: Contact8 },
+            { id: 9, title_composant: 'Contact9', component: Contact9 },
+            { id: 10, title_composant: 'Contact10', component: Contact10 },
+            { id: 11, title_composant: 'Contact11', component: Contact11 },
         ],
     },
 
@@ -281,6 +324,8 @@ const data = {
             { id: 4, title_composant: 'Footer4', component: Footer4 },
             { id: 5, title_composant: 'Footer5', component: Footer5 },
             { id: 6, title_composant: 'Footer6', component: Footer6 },
+            { id: 7, title_composant: 'Footer7', component: Footer7 },
+            { id: 8, title_composant: 'Footer8', component: Footer8 },
         ],
     },
 
@@ -353,6 +398,17 @@ const data = {
     },
 
 
+    Experience: {
+        id: 1,
+        titre: "Experience ✅",
+        path: "/?tab=Experience",
+        components: [
+            { id: 1, title_composant: 'Experience1', component: Experience1 },
+            { id: 2, title_composant: 'Experience2', component: Experience2 },
+        ],
+    },
+
+
 
 
 
@@ -384,8 +440,14 @@ const data = {
             { id: 5, title_composant: 'Service5', component: Service5 },
             { id: 6, title_composant: 'Service6', component: Service6 },
             { id: 7, title_composant: 'Service7', component: Service7 },
-            { id: 8, title_composant: 'Service8', component: Service8
-         },
+            { id: 8, title_composant: 'Service8', component: Service8 },
+            { id: 9, title_composant: 'Service9', component: Service9 },
+            { id: 10, title_composant: 'Service10', component: Service10 },
+            { id: 11, title_composant: 'Service11', component: Service11 },
+            { id: 12, title_composant: 'Service12', component: Service12 },
+            { id: 13, title_composant: 'Service13', component: Service13 },
+
+       
         ],
     },
 
@@ -401,6 +463,21 @@ const data = {
             { id: 2, title_composant: 'Statistic2', component: Statistic2 },
             { id: 3, title_composant: 'Statistic3', component: Statistic3 },
             { id: 4, title_composant: 'Statistic4', component: Statistic4 },
+
+        ],
+    },
+
+
+
+    Skills: {
+        id: 1,
+        titre: "Skills 🚫",
+        path: "/?tab=Skills",
+        components: [
+            { id: 1, title_composant: 'Skills1', component: Skills1 },
+            { id: 2, title_composant: 'Skills2', component: Skills2 },
+            { id: 3, title_composant: 'Skills3', component: Skills3 },
+            { id: 4, title_composant: 'Skills4', component: Skills4 },
 
         ],
     },
@@ -430,6 +507,10 @@ const data = {
         components: [
             { id: 1, title_composant: 'Team1', component: Team1 },
             { id: 2, title_composant: 'Team2', component: Team2 },
+            { id: 3, title_composant: 'Team3', component: Team3 },
+            { id: 4, title_composant: 'Team4', component: Team4 },
+            { id: 5, title_composant: 'Team5', component: Team5 },
+            { id: 6, title_composant: 'Team6', component: Team6 },
         ],
     },
 

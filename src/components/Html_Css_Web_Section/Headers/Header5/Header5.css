@@ -1,0 +1,217 @@
+@font-face {
+    font-family: jost_regular;
+    src: url(./GoogleFonts/Montserrat/static/Montserrat-Bold.ttf);
+    src: url(./GoogleFonts/Noto_Sans/static/NotoSans-Bold.ttf);
+}
+@font-face {
+    font-family: jost_light;
+    src: url(./GoogleFonts/Jost/static/Jost-Light.ttf);
+}
+
+#Header_5 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(249, 243, 234); */
+    overflow: hidden;
+}
+
+#Header_5 > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+}
+
+#Header_5 .bg_filter {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to left, rgba(210, 210, 210, 0.353) 75%, rgb(71, 71, 71) 40%);
+    background-image: linear-gradient(to left, rgba(255, 68, 0, 0.154) 75%, orangered 40%);
+    background-image: linear-gradient(to left, rgba(107, 0, 86, 0.142) 75%, rgb(75, 2, 60) 40%);
+}
+
+
+
+#Header_5 .Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    width: 80%;
+    min-width: 50rem;
+    /* border: 1px solid rgb(71, 71, 71); */
+}
+
+#Header_5 .img_box {
+    min-width: 20rem;
+    max-width: 30vw;
+    min-height: 20rem;
+    max-height: 30vw;
+    /* border: 1px solid orangered; */
+    box-shadow: 0 0 1rem rgb(75, 2, 60);
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+#Header_5 .img_box img {
+    width: 120%;
+    transform: translate(-3rem, -7rem);
+    /* height: 100%; */
+    /* object-fit: contain; */
+}
+
+#Header_5 .Containt {
+    padding-left: 7%;
+    /* min-width: 25rem; */
+}
+
+#Header_5 h1 {
+    font-family: jost_regular;
+    font-size: clamp(3.6rem, 5vw, 10vw);
+    font-size: 4rem;
+    margin: 0;
+    width: 95%;
+    /* min-width: 21.5rem; */
+    line-height: 5rem;
+    color: rgb(71, 71, 71);
+    color: rgba(0, 0, 0, 0.79);
+}
+
+#Header_5 p {
+    font-family: jost_light;
+    font-size: clamp(1rem, 1.2vw, 10vw);
+    color: rgba(76, 76, 76, 0.735);
+    margin: 2rem 0;
+    font-weight: 600;
+}
+
+#Header_5 button {
+    padding: .7rem 4rem;
+    border-radius: .3rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(75, 2, 60);
+    color: white;
+    cursor: pointer;
+}
+
+/*
+#Header_5 .Containt {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+#Header_5 .img_box {
+    position: relative;
+}
+
+#Header_5 .img_box .img_filter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.5rem;
+    background-image: linear-gradient(rgba(141, 13, 13, 0), rgb(249, 243, 234) 90% );
+}
+
+
+
+
+
+
+#Header_5 .Containt h2 {
+    font-size: 4rem;
+    font-size: clamp(3rem, 4.5vw, 4.5vw);
+    font-family: jost_regular;
+    width: 55%;
+    min-width: 30rem;
+    margin: 0;
+    color: rgb(43, 43, 43);
+    line-height: 4.5rem;
+}
+
+
+#Header_5 .Containt p {
+    font-size: 1.2rem;
+    color: rgb(80, 80, 80);
+    width: 50%;
+    background-color: rgba(249, 243, 234, 0.454);
+    border-radius: 1rem;
+    font-family: jost_light;
+
+}
+
+#Header_5 .Containt .btn_section {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#Header_5 .Containt button {
+    padding: 1rem 3rem;
+    font-size: .91rem;
+    border-radius: 4rem;
+}
+
+#Header_5 .Containt button:first-child {
+    background-color: orangered;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#Header_5 .Containt button:last-child {
+    border: 1px solid orangered;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(249, 243, 234);
+}
+
+
+@media (max-width: 1100px) {
+    #Header_5 .Container .img_box {
+        transform: translateX(15rem);
+        transition: .5s;
+    }
+}
+
+@media (max-width: 700px) {
+    #Header_5 .Container .img_box {
+        transform: translateX(18rem);
+        transition: .5s;
+    }
+
+
+    #Header_5 .Containt h2 {
+        font-size: clamp(2.5rem, 3vw, 6vw);
+        color: white;
+        min-width: 90vw;
+
+    }
+    
+
+    #Header_5 .Containt p {
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        width: 100%;
+        font-size: 1rem;
+
+    }
+
+    #Header_5 .Container .img_filter2 {
+         position: absolute;
+         inset: 0;
+         background-color: rgba(0, 0, 0, 0.561);
+         z-index: 1;
+         scale: 2;
+         transition: 1s;
+    }
+} */

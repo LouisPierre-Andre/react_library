@@ -1,0 +1,304 @@
+#NavBar_box {
+    /* position: fixed; */
+    /* margin-bottom: 5rem; */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 99;
+
+
+}
+
+
+/* #NavBar_3.color_white {
+    background-color: white ;
+}
+
+#NavBar_3.color_transparent {
+    background-color: transparent ;
+    color: white;
+    box-shadow: none;
+
+}
+
+#NavBar_3.color_transparent ul li {
+    color: white;
+}
+
+#NavBar_3.color_white .logo_section h3 span {
+    color: #3b61dd;
+}
+
+#NavBar_3.color_white ul li:hover {
+    color: #3b61dd;
+}
+
+#NavBar_3.color_transparent .logo_section .bi-list {
+    color: white;
+} */
+
+
+
+body {
+    margin: 0;
+}
+
+
+.NavBar3_1 {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+.NavBar3_1 .containt {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    color: white;
+    box-sizing: border-box;
+}
+
+.NavBar3_1 .containt div:nth-child(2) p:first-child {
+    border-right: .15rem solid white;
+    padding-right: 1rem;
+}
+
+.NavBar3_1 .containt > div {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.NavBar3_1 .containt > div p {
+    margin: .5rem 0;
+}
+
+
+
+
+
+
+#NavBar_3  {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.176);
+    padding: .4rem 0;
+
+    
+}
+
+#NavBar_3 .navbar_containt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: .38rem 0;
+}
+
+
+
+
+
+
+
+
+#NavBar_3 .logo_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+#NavBar_3 .navbar_containt i {
+    display: none;
+}
+
+
+
+#NavBar_3 h3 {
+    cursor: default;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+#NavBar_3 .logo_section h3 span {
+    color:  var(--main-color);
+}
+
+#NavBar_3 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+#NavBar_3 ul .contact_btn {
+    display: none;
+}
+
+#NavBar_3 ul div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#NavBar_3 .navbar_containt .contact_btn li {
+    background-color:  var(--main-color);
+    color: white; 
+    padding: .3rem 1rem;
+    border-radius: .3rem;
+}
+
+#NavBar_3 .Link {
+    text-decoration: none;
+}
+
+#NavBar_3 li {
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 1rem;
+    transition: .15s;
+}
+
+#NavBar_3 ul li:hover {
+    color:  var(--main-color);
+}
+
+#NavBar_3 i {
+    display: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: black;
+    
+} 
+  
+    
+
+@media (max-width: 900px) {
+    .NavBar3_1 {
+        display: none;
+    }
+}
+
+
+
+
+@media(max-width: 800px) {
+    #NavBar_3.active ul {
+        height: 35rem;
+        
+    }
+
+    #NavBar_3 .navbar_containt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+#NavBar_3 .logo_section {
+      width: 100%;
+}
+     
+     
+     
+     #NavBar_3 .logo_section i {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 3rem;
+         height: 2.2rem;
+         font-size: 2.1rem;
+        }
+
+
+#NavBar_3 .logo_section img {
+    width: 1.5rem;
+}
+        
+        
+        #NavBar_3 .navbar_containt {
+            flex-direction: column;
+            
+        }
+        
+        
+        #NavBar_3 ul {
+            justify-content: start;
+            flex-direction: column;
+            gap: 0;
+            height: 0rem;
+            width: 100%;
+            overflow: hidden;
+            transition: 1s;
+            padding-left: 0;
+
+        }
+
+        
+        #NavBar_3 ul .contact_btn {
+             display: flex;
+}
+        #NavBar_3 .navbar_containt > .contact_btn {
+             display: none;
+}
+
+
+        #NavBar_3 ul div {
+            width: 100%;
+        }
+        
+        
+        
+        #NavBar_3 ul li {
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.113);
+    }
+    
+    
+        
+    #NavBar_3 ul div:last-child li {
+        padding: .3rem;
+        width: 7rem;
+        margin-top: .7rem;
+    }
+
+
+    #NavBar_3 .logo_section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }  
+
+    
+
+
+/* -------------------------------------------------------------- */
+
+    /* #NavBar_3.color_transparent.active  {
+    background-color: white;
+}
+
+#NavBar_3.color_transparent.active ul li,
+#NavBar_3.color_transparent.active .logo_section h3,
+#NavBar_3.color_transparent.active .logo_section .bi-list  {
+    color: black;
+}
+
+#NavBar_3.color_transparent.active .logo_section h3 span  {
+    color: #3b61dd;
+} */
+    
+    
+}
+

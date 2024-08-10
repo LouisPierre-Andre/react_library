@@ -1,0 +1,148 @@
+/* @font-face {
+    font-family: Lato_light;
+    src: url(./GoogleFonts/Lato/Lato-Light.ttf);
+}
+@font-face {
+    font-family: Lato_regular;
+    src: url(./GoogleFonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Lato_bold;
+    src: url(./GoogleFonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: Jost_light;
+    src: url(./GoogleFonts/Jost/static/Jost-Light.ttf);
+}
+@font-face {
+    font-family: Jost_regular;
+    src: url(./GoogleFonts/Jost/static/Jost-Regular.ttf);
+}
+@font-face {
+    font-family: Jost_bold;
+    src: url(./GoogleFonts/Jost/static/Jost-Bold.ttf);
+}
+
+@font-face {
+    font-family: Jost_italic;
+    src: url(./GoogleFonts/Jost/static/Jost-LightItalic.ttf);
+} */
+
+
+
+#Skill_4 .service_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6rem 0;
+    background-color: var(--main-gray);
+}
+
+#Skill_4 .service_containt {
+    width: 80%;
+}
+
+
+
+
+
+#Skill_4 .service_containt > h2 {
+    position: relative;
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-family: Lato_bold;
+    color: var(--main-black);
+    margin-bottom: 3rem;
+}
+
+#Skill_4 .service_containt > h2::before,
+#Skill_4 .service_containt > h2::after {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: .152rem;
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    bottom: -0.2rem;
+    left: 0;
+}
+
+#Skill_4 .service_containt > h2::after {
+   bottom: -.7rem;
+   width: 3rem;
+   
+}
+
+
+
+
+
+
+#Skill_4 .service_containt > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+#Skill_4 .service_containt > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem .4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem  rgba(0, 0, 0, 0.113);
+    background-color: white;
+}
+
+#Skill_4 .service_containt > div > div:hover {
+}
+
+#Skill_4 .service_containt > div > div h4 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: .5rem;
+    font-size: clamp(.9rem, 1.2vw, 1.1rem);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Lato_bold;
+    color: rgba(0, 0, 0, 0.688);
+}
+
+#Skill_4 .service_containt > div > div img {
+    object-fit: contain;
+    height: 4rem;
+}
+
+@media (max-width: 800px) {
+    #Skill_4 .service_containt > div {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+}
+
+@media (max-width: 600px) {
+    #Skill_4 .service_containt > div {
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+@media (max-width: 400px) {
+    #Skill_4 .service_containt {
+        width: 90%;
+    }
+
+    #Skill_4 .service_containt > div {
+    gap: .5rem;
+}
+}
+
+@media (max-width: 300px) {
+    #Skill_4 .service_containt > div > div img {
+    height: 3rem;
+}
+}
+
+

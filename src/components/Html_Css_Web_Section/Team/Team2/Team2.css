@@ -1,0 +1,178 @@
+#Team_2 .Team_page_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 6rem 0;
+}
+
+#Team_2 .team_page_containt {
+    width: 80%;
+}
+
+#Team_2 .team_page_containt  h2 {
+    font-size: clamp(1.4rem, 2.2vw, 3vw);
+    color: rgb(43, 43, 43);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: .5rem;
+    padding: 0 5vw;
+    text-align: center;
+}
+
+#Team_2 .team_page_containt .description {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: rgb(89, 89, 89);
+    text-align: center;
+
+}
+
+#Team_2 .team_page_containt .team_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+#Team_2 .team_page_containt .team_list .single_team {
+    border-bottom: 2px solid var(--main-color);
+    border-right: 1px solid var(--main-color);
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#Team_2 .team_page_containt .single_team .image_box {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.149);
+    overflow: hidden;
+}
+
+#Team_2 .team_page_containt .team_list .single_team img {
+    width: 93%;
+    height: 93%;
+    object-fit: cover;
+    transition: .5s;
+    border-radius: .51rem;
+
+    
+}
+
+#Team_2 .team_page_containt .single_team:hover .image_box img {
+    scale: 1.021;
+
+}
+
+#Team_2 .team_page_containt .single_team .details_box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#Team_2 .team_page_containt .team_list .single_team h3 {
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    color: rgb(30, 30, 30);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: .7rem 0;
+    margin-bottom: .0rem;
+    font-weight: bold;
+}
+
+#Team_2 .team_page_containt .single_team .job {
+    font-size: 1.1rem;
+    color: var(--main-color);
+    text-align: center;
+    margin: .0rem 0;
+}
+
+#Team_2 .team_page_containt .single_team p {
+    font-size: 1.041rem;
+    line-height: 1.6rem;
+    color: rgb(61, 61, 61);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#Team_2 .team_page_containt .p {
+    margin-top: .5rem;
+    font-size: .91rem !important;
+    line-height: 1.5rem !important;
+    /* color: red; */
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+
+#Team_2 .team_page_containt .single_team .info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-color) !important;
+    color: white;
+    transition: .5s;
+    top: 18rem;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#Team_2 .team_page_containt .single_team:hover .info {
+    top: 5rem;
+}
+
+#Team_2 .team_page_containt .single_team .info .media {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    color: #f8a555;
+}
+
+#Team_2 .team_page_containt .single_team .media i {
+    cursor: pointer;
+}
+
+#Team_2 .team_page_containt .single_team .info p {
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: .5rem;
+    color: rgba(255, 255, 255, 0.752);
+}
+
+
+
+@media (max-width: 501px) {
+
+
+    #Team_2 .team_page_containt {
+        width: 90%;
+    }
+
+
+
+    #Team_2 .team_page_containt .team_list {
+    grid-template-columns: 1fr;
+    }
+
+
+    #Team_2 .team_page_containt .single_team .info .media {
+        gap: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    #Team_2 .team_page_containt .single_team .info p {
+        font-size: 1rem;
+    }
+
+
+}

@@ -1,0 +1,199 @@
+/* 
+
+@font-face {
+    font-family: Jost_light;
+    src: url(../GoogleFonts/Jost/static/Jost-Light.ttf);
+}
+
+@font-face {
+    font-family: Jost_regular;
+    src: url(../GoogleFonts/Jost/static/Jost-Regular.ttf);
+} */
+
+
+#About_1 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    /* background-color: var(--main-white); */
+    padding: 6rem 0 10rem 0;
+    
+}
+
+
+#About_1 .Container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#About_1 .Container .img_box {
+    position: relative;
+    width: 30%;
+    max-width: 27rem;
+    min-width: 20rem;
+    height: 26rem;
+}
+
+#About_1 .Container .img_box2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--main-black); */
+    width: 100%;
+    border-radius: .21rem;
+    overflow: hidden;
+    height: 25.7rem;
+
+}
+
+#About_1 .Container .img_design {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -2.5rem;
+    bottom: -2rem;
+    border: .7rem solid var(--main-color);
+    border-radius: .21rem;
+    background-color: var(--main-gray);
+
+}
+
+#About_1 .Container .img_box img {
+    transform: rotateY(189deg);
+    margin-left: 2rem;
+    margin-top: 10rem;
+}
+
+#About_1 .Container .description {
+    width: 60%;
+}
+
+#About_1 .Container .description h2 {
+    font-size: 2rem;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    /* font-family: Jost_regular; */
+    color: rgba(0, 0, 0, 0.806);
+}
+
+#About_1 .Container .description h2::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 5rem;
+    height: .2rem;
+    bottom: .20rem;
+    left: 0;
+    border-radius: 1rem;
+    background-color: var(--main-color);
+}
+
+
+#About_1 .Container .description p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    color: rgba(27, 27, 27, 0.733);
+    /* font-family: Jost_light; */
+}
+
+#About_1 .Container .btn_section {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#About_1 .Container .btn_section button {
+    padding: .5rem 2rem;
+    font-size: .95rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#About_1 .Container .btn_section button:first-child {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: white;
+    border-radius: .25rem;
+}
+
+#About_1 .Container .btn_section button:last-child {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    border-radius: .25rem;
+}
+
+
+
+
+@media (max-width: 900px) {
+    #About_1 .Container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    #About_1 .Container .description {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width: 501px) {
+
+    #About_1 .Container .description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#About_1 .Container .description h2::before {
+    width: 3rem;
+    height: .2rem;
+    bottom: 0rem;
+
+}
+    
+#About_1 .Container .img_box {
+    width: 70vw;
+    min-width: 0rem;
+    transform: translateX(1rem);
+
+
+}
+
+
+#About_1 .Container .img_design {
+    left: -1.5rem;
+    bottom: -1.1rem;
+    border: .3rem solid var(--main-color);
+    border-radius: .21rem;
+    background-color: white;
+
+}
+
+#About_1 .Container .btn_section {
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+#About_1 .Container .btn_section button {
+    width: 100%;
+    padding: 0;
+    height: 2rem;
+}
+
+#About_1 .Container .description p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+
+
+}
+

@@ -1,0 +1,300 @@
+@font-face {
+    font-family: jost_regular;
+    src: url(./GoogleFonts/Montserrat/static/Montserrat-Bold.ttf);
+    src: url(./GoogleFonts/Noto_Sans/static/NotoSans-Bold.ttf);
+}
+@font-face {
+    font-family: jost_light;
+    src: url(./GoogleFonts/Jost/static/Jost-Light.ttf);
+}
+
+@font-face {
+    font-family: PT_Sans_bold;
+    src: url(./GoogleFonts/PT_Sans/PTSans-Bold.ttf);
+}
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////////////////////////////////////////////////////////// */
+#Header_11 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#Header_11 > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+
+
+#Header_11 .bg_filter2 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(193, 193, 193, 0.406); */
+    /* background-color: var(--header-filter-bg1); */
+    background-image: linear-gradient(to right, var(--header-filter-bg1), var(--header-filter-bg2));
+}
+
+
+
+#Header_11 .Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    width: 90%;
+    min-width: 50rem;
+    
+}
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////////////////////////////////////////////////////////// */
+#Header_11 .img_box {
+    width: 23rem;
+    height: 70vh;
+    position: relative;
+    z-index: 2;
+}
+
+#Header_11 .img_box .design1,
+#Header_11 .img_box .design2 {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--main-color);
+    right: -.51rem;
+    top: -.51rem;
+    border-top-right-radius: 1rem;
+    z-index: -21;
+    box-shadow: 0 0 1rem rgb(255, 255, 255);
+    border: 1.5px solid white;
+}
+
+
+#Header_11 .img_box .design2 {
+    left: -.51rem;
+    bottom: -.51rem;
+    top: unset;
+    border-bottom-left-radius: 1rem;
+}
+
+#Header_11 .img_box2 {
+    z-index: 4;
+    border-radius: .53rem;
+    height: 100%;
+    background-color: white;
+}
+
+
+
+
+#Header_11 .img_box img {
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    transform: translate(-13rem, -0rem);
+}
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////////////////////////////////////////////////////////// */
+#Header_11 .Containt {
+    width: 50%;
+    z-index: 2;
+}
+
+#Header_11 .Containt h2 {
+    font-size: 3rem;
+    margin: 0;
+    /* color: rgb(37, 52, 54); */
+    color: rgb(184, 184, 184);
+    font-family: PT_Sans_bold;
+    line-height: 3rem;
+}
+
+#Header_11 .Containt h1 {
+    font-family: PT_Sans_bold;
+    font-size: 3rem;
+    margin: 0;
+    width: 95%;
+    line-height: 4rem;
+    /* color: rgb(37, 52, 54); */
+    color: white;
+
+}
+
+#Header_11 .Containt > h3 {
+    font-size: 1.5rem;
+    font-family: PT_Sans_bold;
+    margin: .3rem 0;
+    padding: .4rem 1rem;
+    border-radius: .25rem;
+    background-color: var(--main-color);
+    color: rgba(0, 0, 0, 0.757);
+}
+
+#Header_11 p {
+    font-family: jost_light;
+    /* font-size: clamp(1rem, 1.2vw, 10vw); */
+    font-size: 1.1rem;
+    color: rgba(194, 194, 194, 0.735);
+    margin: 1rem 0 2rem 0;
+    font-weight: 600;
+}
+
+#Header_11 button {
+    padding: .81rem 2rem;
+    border-radius: .25rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+
+#Header_11 .more_info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    border-radius: .51rem;
+    background-color: white;
+    padding: .8rem;
+}
+
+#Header_11 .more_info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Header_11 .more_info h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-family: jost_regular;
+    color:  rgb(37, 52, 54);
+}
+
+
+#Header_11 .more_info p {
+    margin: 0;
+    color: rgb(90, 89, 89);
+}
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////// */
+/*/////////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 900px) {
+ #Header_11 .Container {
+    flex-direction: column-reverse;
+    min-width: 10rem;
+    }
+#Header_11 .Containt {
+    width: 90% ;
+    }
+#Header_11 .img_box {
+    width: 17rem;
+    height: 17rem;
+    margin-top: 6rem;
+}
+
+
+
+#Header_11 .img_box img {
+    height: 130%;
+    transform: translate(-11rem, 0rem);
+    }
+    
+#Header_11 .Containt h2 {
+    font-size: 2rem;        
+    } 
+
+
+    #Header_11 .Containt h1  {
+    font-size: 2.53rem;
+    line-height: 3.5rem;
+}
+
+
+#Header_11 .Containt > p {
+    margin: 1rem 0;
+}  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 501px) {
+
+    #Header_11 .Container {
+    width: 100%;
+    min-width: 0rem;
+    padding: 4rem 0;
+    
+}
+    
+
+#Header_11 .Containt h2 {
+    font-size: 1.52rem;
+}
+
+#Header_11 .Containt h1 {
+    font-size: 2rem;
+    width: 100%;
+
+}
+
+#Header_11 .Containt > h3 {
+    font-size: 1.1rem;
+}
+
+#Header_11 p {
+    font-size: 1rem;
+}
+
+#Header_11 button {
+    padding: .51rem 2rem;
+   
+}
+
+#Header_11 .more_info p{
+    font-size: .91rem;    
+
+}
+
+
+
+
+
+}

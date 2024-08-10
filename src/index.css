@@ -10,6 +10,25 @@
 
 
 
+:root {
+
+  --main-color: #04b69e;
+  --main-color: #E76026;
+  --main-color: #0362a1;
+  --main-color: #017039;
+  
+  
+  --main-black: #151515;
+  --main-gray: #ebebeb;
+  --main-white: white;
+  
+--header-filter-bg1: #151515;
+--header-filter-bg2: #151515;
+--header-filter-bg2: #151515;
+}
+
+
+
 body, html {
   /* overflow: hidden; */
 }

@@ -1,0 +1,240 @@
+/* html {
+	--main-color: #11a372;
+	--text-bg: #7bf1ca93;
+    --filter-bg1: #11a37233;
+    --filter-bg2: #11a3720a;
+} */
+
+
+@font-face {
+    font-family: jost_regular;
+    src: url(./GoogleFonts/Montserrat/static/Montserrat-Bold.ttf);
+    src: url(./GoogleFonts/Noto_Sans/static/NotoSans-Bold.ttf);
+}
+@font-face {
+    font-family: jost_light;
+    src: url(./GoogleFonts/Jost/static/Jost-Light.ttf);
+}
+
+#Header_13 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    transition: .5s;
+}
+
+#Header_13 > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+
+
+
+#Header_13 .bg_filter2 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(193, 193, 193, 0.406);
+    background-color: rgba(255, 255, 255, 0.468);
+    background-image: linear-gradient(to right, var(--header-filter-bg1), var(--header-filter-bg2));
+
+}
+
+
+
+#Header_13 .Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    width: 90%;
+    min-width: 54rem;
+
+}
+
+#Header_13 .img_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 2;
+    border-radius: 100rem;
+    height: 35rem;
+    overflow: hidden;
+
+}
+
+
+
+#Header_13 .img_box2 {
+    z-index: 4;
+    border-radius: 100rem;
+    height: 100%;
+    background-color: var(--main-color);
+    /* background-image: linear-gradient(to right, var(--main-color), var(--main-color-2)); */
+
+    width: 25rem;
+    height: 25rem;
+    /* box-shadow: 0 0 2rem white; */
+}
+
+
+
+
+#Header_13 .img_box img {
+    height: 140%;
+    transform: translate(-18rem, -10rem);
+}
+
+#Header_13 .Containt {
+    width: 50%;
+    z-index: 2;
+
+}
+
+
+
+#Header_13 h4 {
+    background-color: var(--main-color);
+    padding: .4rem .5rem;
+    color: var(--main-black);
+    font-family: jost_regular;
+    font-size: 1.6rem;
+    border-radius: .41rem;
+    margin: .5rem 0 0 0;
+}
+
+#Header_13 h1 {
+    font-family: jost_regular;
+    font-size: 2.6rem;
+    margin: 0;
+    width: 95%;
+    line-height: 3.3rem;
+    color: rgb(71, 71, 71);
+    color: rgba(255, 255, 255, 0.79);
+}
+
+#Header_13 p {
+    /* font-family: jost_light; */
+    font-size: clamp(1rem, 1.2vw, 10vw);
+    font-size: 1.1rem;
+    color: rgba(199, 199, 199, 0.908);
+    margin: 1rem 0 2rem 0;
+    width: 80%;
+    line-height: 1.6rem;
+}
+
+#Header_13 .btn_section {
+    display: flex;
+    gap: 1rem;
+}
+
+#Header_13 button {
+    padding: .7rem 2rem;
+    border-radius: .3rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--main-color)
+    
+    ;
+
+    color: white;
+    cursor: pointer;
+}
+
+#Header_13 button:last-child {
+        background-color: white;
+        border: 1px solid var(--main-color);
+        color: var(--main-color);
+
+}
+
+
+
+@media (max-width: 900px) {
+#Header_13 .Container {
+    flex-direction: column-reverse;
+    min-width: 10rem;
+    }
+#Header_13 .Containt {
+    width: 90% ;
+    }
+#Header_13 .img_box {
+    height: 24rem;
+}
+
+
+#Header_13 .img_box2 {
+    width: 17rem;
+    height: 17rem;
+}
+
+#Header_13 .img_box img {
+    height: 140%;
+    transform: translate(-13rem, -6.5rem);
+    }
+#Header_13 h4 {
+    margin: .4rem 0;
+}
+
+#Header_13 h1 {
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+}
+
+
+#Header_13 .Containt p {
+    margin: 1rem 0;
+    width: 100%;
+}
+}
+
+
+
+@media (max-width: 501px) {
+    
+#Header_13 .Container {
+    width: 100%;
+}
+
+#Header_13 h4 {
+    font-size: 1rem;
+    margin: 1rem 0 0 0;
+}
+
+#Header_13 h1 {
+    font-size: 2rem;
+    width: 100%;
+    line-height: 2.8rem;
+}
+
+#Header_13 p {
+    font-size: 1rem;
+}
+
+
+#Header_13 .btn_section {
+    justify-content: center;
+    gap: .51rem;
+}
+
+#Header_13 .btn_section button{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0;
+    height: 2.3rem;
+}
+
+
+
+}

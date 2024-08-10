@@ -1,0 +1,206 @@
+@font-face {
+    font-family: jost_regular;
+    src: url(./GoogleFonts/Montserrat/static/Montserrat-Bold.ttf);
+    src: url(./GoogleFonts/Noto_Sans/static/NotoSans-Bold.ttf);
+}
+@font-face {
+    font-family: jost_light;
+    src: url(./GoogleFonts/Jost/static/Jost-Light.ttf);
+}
+
+#Header_12 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    transition: .5s;
+}
+
+#Header_12 > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+
+
+
+#Header_12 .bg_filter2 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--header-filter-bg1), var(--header-filter-bg2));
+}
+
+
+
+#Header_12 .Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    width: 90%;
+    min-width: 54rem;
+    
+}
+
+#Header_12 .img_box {
+    position: relative;
+    box-shadow: 0 0 1rem rgb(75, 2, 60);
+    z-index: 2;
+    border: .5rem solid var(--main-color);
+    padding: .5rem;
+    border-radius: 100rem;
+    width: 26rem;
+    height: 26rem;
+}
+
+
+
+#Header_12 .img_box2 {
+    z-index: 4;
+    border-radius: 100rem;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid var(--main-color);
+    overflow: hidden;
+}
+
+
+
+
+#Header_12 .img_box img {
+    height: 140%;
+    transform: translate(-20rem, 1rem);
+}
+
+
+#Header_12 .img_box .design1,
+#Header_12 .img_box .design2 {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(144, 102, 47);
+    background-color: var(--main-color);
+    right: 1.11rem;
+    top: 1.11rem;
+    border-top-right-radius: 1rem;
+    z-index: -21;
+    box-shadow: 0 0 2rem white;
+}
+
+
+#Header_12 .img_box .design2 {
+    left: 1.11rem;
+    bottom: 1.11rem;
+    top: unset;
+    border-bottom-left-radius: 1rem;
+}
+
+
+
+
+#Header_12 .Containt {
+    width: 50%;
+    z-index: 2;
+}
+
+#Header_12 h1 {
+    font-family: jost_regular;
+    font-size: 4rem;
+    margin: 0;
+    width: 95%;
+    line-height: 5rem;
+    color: rgb(71, 71, 71);
+    color: rgba(0, 0, 0, 0.79);
+    color: white;
+}
+
+#Header_12 p {
+    font-family: jost_light;
+    font-size: 1.1rem;
+    color: rgba(76, 76, 76, 0.735);
+    color: white;
+    margin: 2rem 0;
+    font-weight: 600;
+}
+
+#Header_12 button {
+    padding: .7rem 4rem;
+    border-radius: .3rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+#Header_12 .Container {
+    flex-direction: column-reverse;
+    min-width: 10rem;
+    }
+#Header_12 .Containt {
+    width: 90% ;
+    text-align: center;
+    }
+#Header_12 .img_box {
+    width: 17rem;
+    height: 17rem;
+    margin-top: 3rem;
+}
+
+
+
+#Header_12 .img_box img {
+    transform: translate(-13rem, 0rem);
+    }
+#Header_12 h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+
+#Header_12 .Containt p {
+    margin: 1rem;
+} 
+}
+
+
+
+
+@media (max-width: 501px) {
+#Header_12 .Container {
+    width: 100%;
+}
+
+
+    #Header_12 .Containt {
+    width: 100% ;
+    }
+
+    
+#Header_12 h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 1rem;
+    width: 100%;
+    line-height: 3rem;
+}
+
+}

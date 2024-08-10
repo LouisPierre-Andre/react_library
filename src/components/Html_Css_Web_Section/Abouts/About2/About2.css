@@ -1,0 +1,175 @@
+/* @font-face {
+    font-family: Jost_light;
+    src: url(GoogleFonts/Jost/static/Jost-Light.ttf);
+}
+
+@font-face {
+    font-family: Lato_regular;
+    src: url(GoogleFonts/Lato/Lato-Regular.ttf);
+} */
+
+
+#About_2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(255, 255, 0, 0.091);
+    background-color: var(--white-color);
+    padding: 6rem 0;
+}
+
+#About_2 .Container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#About_2 .Container .img_box {
+    position: relative;
+    width: 32%;
+    min-width: 20rem;
+    max-width: 26rem;
+    height: 27rem;
+}
+
+#About_2 .Container .img_box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: .21rem;
+    background-color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* box-shadow: 0 0 2rem var(--main-light); */
+    background-color: var(--main-black);
+
+
+}
+
+#About_2 .Container .img_design,
+#About_2 .Container .img_design2 {
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    left: -.51rem;
+    top: -.51rem;
+    border-radius: .21rem;
+    background-color: var(--main-color);
+}
+
+#About_2 .Container .img_design2 {
+   bottom: -.51rem;
+   top: unset;
+   left: unset;
+   right: -.51rem;
+}
+
+#About_2 .Container .img_box img {
+    scale: 1.17;
+    transform: translate(0 , 2rem);
+}
+
+
+
+
+/* -------------------------------------------------------- */
+#About_2 .Container .description {
+    width: 60%;
+}
+
+#About_2 .Container h4 {
+    font-family: Lato_regular;
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+    color: rgb(104, 104, 104);
+}
+
+#About_2 .Container .description h2 {
+    font-size: 2rem;
+    position: relative;
+    margin: 0;
+    line-height: 3rem;
+    font-family: Lato_regular;
+    color: rgba(0, 0, 0, 0.809);
+}
+
+
+#About_2 .Container .description p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: rgb(87, 87, 87);
+    font-family: Jost_light;
+}
+
+#About_2 .Container .btn_section {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#About_2 .Container .btn_section button {
+    padding: .6rem 2rem;
+    font-size: .95rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#About_2 .Container .btn_section button:first-child {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: white;
+    border-radius: .5rem;
+}
+
+#About_2 .Container .btn_section button:last-child {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    border-radius: .5rem;
+}
+
+
+
+
+@media (max-width: 900px) {
+    #About_2 .Container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    #About_2 .Container .description {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width: 501px) {
+    #About_2 .Container .img_box {
+    width: 70vw;
+    min-width: 2rem;
+    height: 24rem;
+}
+
+#About_2 .Container .img_box img {
+     transform: translate(0rem, 3rem);
+}
+
+#About_2 .Container .btn_section {
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#About_2 .Container .btn_section button {
+    width: 100%;
+    padding: 0;
+    height: 3rem;
+}
+}
+

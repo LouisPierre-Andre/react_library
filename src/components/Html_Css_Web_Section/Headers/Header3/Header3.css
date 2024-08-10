@@ -1,0 +1,151 @@
+@font-face {
+    font-family: jost_regular;
+    src: url(./GoogleFonts/Montserrat/static/Montserrat-Bold.ttf);
+    src: url(./GoogleFonts/Noto_Sans/static/NotoSans-Bold.ttf);
+}
+@font-face {
+    font-family: jost_light;
+    src: url(./GoogleFonts/Jost/static/Jost-Light.ttf);
+}
+
+#Header_3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(249, 243, 234);
+    overflow: hidden;
+/* clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 100%);    border: 2px solid red; */
+}
+
+/* #Header_3 .Hero_bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid red;
+} */
+
+#Header_3 .Container {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+}
+
+#Header_3 .Containt {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+#Header_3 .img_box {
+    position: relative;
+}
+
+#Header_3 .img_box .img_filter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.5rem;
+    background-image: linear-gradient(rgba(141, 13, 13, 0), rgb(249, 243, 234) 90% );
+}
+
+
+
+
+
+
+#Header_3 .Containt h2 {
+    font-size: 4rem;
+    font-size: clamp(3rem, 4.5vw, 4.5vw);
+    font-family: jost_regular;
+    width: 55%;
+    min-width: 30rem;
+    margin: 0;
+    color: rgb(43, 43, 43);
+    line-height: 4.5rem;
+}
+
+
+#Header_3 .Containt p {
+    font-size: 1.2rem;
+    color: rgb(80, 80, 80);
+    width: 50%;
+    background-color: rgba(249, 243, 234, 0.454);
+    border-radius: 1rem;
+    font-family: jost_light;
+
+}
+
+#Header_3 .Containt .btn_section {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+#Header_3 .Containt button {
+    padding: 1rem 3rem;
+    font-size: .91rem;
+    border-radius: 4rem;
+}
+
+#Header_3 .Containt button:first-child {
+    background-color: orangered;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#Header_3 .Containt button:last-child {
+    border: 1px solid orangered;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(249, 243, 234);
+}
+
+
+@media (max-width: 1100px) {
+    #Header_3 .Container .img_box {
+        transform: translateX(15rem);
+        transition: .5s;
+    }
+}
+
+@media (max-width: 700px) {
+    #Header_3 .Container .img_box {
+        transform: translateX(18rem);
+        transition: .5s;
+    }
+
+
+    #Header_3 .Containt h2 {
+        font-size: clamp(2.5rem, 3vw, 6vw);
+        color: white;
+        min-width: 90vw;
+
+    }
+    
+
+    #Header_3 .Containt p {
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        width: 100%;
+        font-size: 1rem;
+
+    }
+
+    #Header_3 .Container .img_filter2 {
+         position: absolute;
+         inset: 0;
+         background-color: rgba(0, 0, 0, 0.561);
+         z-index: 1;
+         scale: 2;
+         transition: 1s;
+    }
+}
